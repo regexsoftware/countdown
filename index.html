@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- basic page needs
+   ================================================== -->
+    <meta charset="utf-8">
+    <title>REGEX Startup Services</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+   ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <!-- script
+   ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- favicons
+	================================================== -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        body {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .heading {
+            color: #f88888e0!important;
+            margin: auto !important;
+            align-self: center;
+            font-size: 4rem;
+            font-weight: 300;
+            line-height: 1.2;
+            font-family: Comfortaa, cursive;
+            letter-spacing: 5px;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body id="top">
+
+
+    <!-- header 
+		================================================== -->
+    <header>
+
+        <div class="row">
+            <div class="logo">
+                <a href="#">Regex Startup Services</a>
+            </div>
+
+
+            <div class="social-links">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- /header -->
+
+    <!-- home
+		================================================== -->
+    <section id="home" class="home-particles">
+
+        <div class="shadow-overlay"></div>
+
+        <div class="content-wrap-table">
+
+            <div class="main-content-tablecell">
+
+                <div class="row">
+                    <div class="col-twelve">
+
+                        <div id="counter">
+                            <div class="half">
+                                <span id="days"> </span>
+                                <span id="hours"></span>
+                            </div>
+                            <div class="half">
+                                <span id="mins"> </span>
+                                <span id="secs"></span>
+                            </div>
+                        </div>
+
+                        <script>
+                            // Set the date we're counting down to
+                            var countDownDate = new Date("Aug 30, 2019 17:00:00").getTime();
+
+                            // Update the count down every 1 second
+                            var x = setInterval(function() {
+
+                                // Get today's date and time
+                                var now = new Date().getTime();
+
+                                // Find the distance between now and the count down date
+                                var distance = countDownDate - now;
+
+                                // Time calculations for days, hours, minutes and seconds
+                                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                                document.getElementById("days").innerHTML = days + "   <sup>Days</sup>";
+                                document.getElementById("hours").innerHTML = hours + "   <sup>Hours</sup>";
+                                document.getElementById("mins").innerHTML = minutes + "   <sup>Minutes</sup>";
+                                document.getElementById("secs").innerHTML = seconds + "   <sup>Seconds</sup>";
+
+                                // If the count down is over, write some text 
+                                if (distance < 0) {
+                                    clearInterval(x);
+                                    document.getElementById("days").innerHTML = "EXPIRED";
+                                }
+                            }, 1000);
+                        </script>
+                        <div class="bottom-text">
+                            <h1 style="letter-spacing: 2px;">Regex Startup Services</h1>
+                            <p style="font-family: Comfortaa;">
+                                Our awesome website is under development we will launch it soon. Thank you for your patience.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- /row -->
+
+            </div>
+            <!-- /main-content -->
+
+        </div>
+        <!-- /content-wrap -->
+
+    </section>
+
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <!-- Java Script
+   ================================================== -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
